@@ -1,5 +1,4 @@
 import logging
-from logging.handlers import RotatingFileHandler
 import os
 import re
 from glob import glob
@@ -21,13 +20,9 @@ def init_log():
     """
 
     logger = logging.getLogger("Anki Markdown Notes Log")
-    handler = RotatingFileHandler('{}/anki-markdown.log'.format(DIRECTORY),
-                              maxBytes=10**6, backupCount=5)
     formatter = logging.Formatter(
         '%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
 
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
 
 
