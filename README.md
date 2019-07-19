@@ -1,3 +1,7 @@
+*This fork is to make tricktux's fork compatible with windows*
+
+---
+
 **Heavily based on work on this repo:**
 
 [Pradhyo/anki-markdown-notes](https://github.com/Pradhyo/anki-markdown-notes)
